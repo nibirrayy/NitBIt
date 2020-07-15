@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    {% include styles.html %}
+    <style>
+      .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 0px;
+        text-align: center;
+        background-color: transparent;
+      }
+      .navbar > .container .navbar-brand-centered,
+      .navbar > .container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+      }
+    </style>
+    {% include header.html %}
+    <title>NitBit</title>
+  </head>
+  <body>
+    <div class="container">
+      {{ content }}
+    </div>
+    {% include footer.html %} {% include javascripts.html %}
+  </body>
+</html>
